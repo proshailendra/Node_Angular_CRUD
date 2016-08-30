@@ -1,0 +1,30 @@
+{
+  "name": "angular_node_crud",
+  "description": "angularc crud",
+  "main": "server.js",
+  "authors": [
+    "shailendra@dotnettricks.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "node",
+    "db",
+    "operations"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "angular-messages": "ng-messages#*"
+  }
+}

@@ -1,0 +1,20 @@
+<h2>{{Title}}</h2>
+<hr>
+<table class="table">
+    <tr>
+        <th>SNo.</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact No.</th>
+    </tr>
+    <tr ng-repeat="item in users">
+        <td>{{$index+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.contactNo}}</td>
+        <td>
+            <a ui-sref="edit({id:item.userId})" class="btn btn-success">Edit</a>
+            <a href="#" ng-click="delete(item.userId)" class="btn btn-warning">Delete</a>
+        </td>
+    </tr>
+</table>

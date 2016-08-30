@@ -1,0 +1,37 @@
+<h2>{{Title}}</h2>
+<hr>
+<form class="form-horizontal" role="form" name="userForm" ng-submit="saveData(user)" novalidate>
+    <div class="form-group">
+        <label class="col-sm-2">Name</label>
+        <div class="col-sm-10">
+            <input type="text" name="name" ng-model="user.name" ng-required="true" class="form-control">
+            <div class="text-danger" ng-messages="userForm.name.$error" ng-show="userForm.name.$dirty || userForm.$submitted">
+                <span ng-message="required">Please Enter Name</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2">Address</label>
+        <div class="col-sm-10">
+            <input type="text" name="address" ng-model="user.address" ng-required="true" class="form-control">
+            <div class="text-danger" ng-messages="userForm.address.$error" ng-show="userForm.address.$dirty || userForm.$submitted">
+                <span ng-message="required">Please Enter Address</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2">Contact No.</label>
+        <div class="col-sm-10">
+            <input type="text" name="contactNo" ng-model="user.contactNo" ng-required="true" class="form-control">
+            <div class="text-danger" ng-messages="userForm.contactNo.$error" ng-show="userForm.contactNo.$dirty || userForm.$submitted">
+                <span ng-message="required">Please Enter Contact No.</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a ui-sref="home" class="btn btn-warning">Cancel</a>
+        </div>
+    </div>
+</form>

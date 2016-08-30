@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <title>{{Title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="angular/angular.js"></script>
+    <script src="angular-messages/angular-messages.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="app.js"></script>
+    <script src="services/user.service.js"></script>
+    <script src="controllers/user.controller.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <a class="navbar-brand" href="#">Site</a>
+        <ul class="nav navbar-nav">
+            <li>
+                <a ui-sref="home">Home</a>
+            </li>
+            <li>
+                <a ui-sref="create">Create</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+</body>
+
+</html>
